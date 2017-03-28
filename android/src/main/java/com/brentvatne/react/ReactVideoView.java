@@ -567,3 +567,14 @@ public class ReactVideoView extends ScalableVideoView implements MediaPlayer.OnP
                 @Override
                 public void run() {
                     // Restore original state
+                    setPausedModifier(mActiveStatePauseStatus);
+                }
+            });
+
+        }
+    }
+
+    @Override
+    public void onHostDestroy() {
+    }
+}
